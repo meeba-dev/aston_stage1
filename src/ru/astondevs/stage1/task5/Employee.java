@@ -1,9 +1,7 @@
 package ru.astondevs.stage1.task5;
 
-import java.util.Comparator;
 
-// Кастомный компаратор + сортировка
-//
+
 public class Employee {
 
     private int id;
