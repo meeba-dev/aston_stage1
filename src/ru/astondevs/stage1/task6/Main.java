@@ -13,7 +13,8 @@ public class Main {
         arrayList.add(new CustomClass("str1", Arrays.asList(17,222,6)));
         arrayList.add(new CustomClass("str7", Arrays.asList(1080,4060,7,2,98)));
         arrayList.add(new CustomClass("str3", Arrays.asList(907,24,379,8888)));
-        arrayList.stream().sorted(Comparator.comparing(CustomClass::getStr).reversed()).map(CustomClass::getList).map(e -> "Element: " + e.toString()).collect(Collectors.toSet()).forEach(System.out::println);
+        arrayList.stream().sorted(Comparator.comparing(CustomClass::getStr).reversed()).
+                map(CustomClass::getList).map(e -> "Element: " + e.toString()).collect(Collectors.toSet()).forEach(System.out::println);
 
     }
 
